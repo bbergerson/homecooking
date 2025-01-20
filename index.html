@@ -3,91 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homecooking App</title>
+    <title>Mirepoix</title>
     <style>
         body {
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f9f9f9;
+            background-color: #f9fdf9;
             color: #333;
             scroll-behavior: smooth;
         }
         header {
-            background: linear-gradient(90deg, #ff7e5f, #feb47b);
-            color: white;
+            background: linear-gradient(90deg, #e0ffe0, #f6fff6);
+            color: #333;
             padding: 4rem;
             text-align: center;
-            transition: all 0.3s ease-in-out;
+            border-bottom: 2px solid #d4f4d4;
         }
-        header:hover {
-            background: linear-gradient(90deg, #feb47b, #ff7e5f);
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.2rem;
+            color: #666;
         }
         main {
-            max-width: 1200px;
+            max-width: 1000px;
             margin: 0 auto;
             padding: 2rem;
         }
         section {
-            margin-bottom: 3rem;
-            padding: 3rem;
-            background: white;
-            border-radius: 15px;
-            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2.5rem;
+            padding: 2rem;
+            background: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
         section:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
         }
         .about {
-            background: linear-gradient(to right, #ff9a9e, #fad0c4);
-            color: #333;
+            border-left: 5px solid #ffcccb;
         }
-        .recipes {
-            background: linear-gradient(to right, #a1c4fd, #c2e9fb);
-            color: #333;
+        .features {
+            border-left: 5px solid #fff176;
+        }
+        .download {
+            border-left: 5px solid #66bb6a;
         }
         footer {
             text-align: center;
-            padding: 2rem 0;
-            background-color: #333;
-            color: white;
-            margin-top: 3rem;
+            padding: 2rem;
+            background-color: #f9fdf9;
+            color: #666;
+            border-top: 2px solid #d4f4d4;
         }
         footer a {
-            color: #ff7e5f;
+            color: #66bb6a;
             text-decoration: none;
             transition: color 0.3s ease;
         }
         footer a:hover {
-            color: #feb47b;
+            color: #388e3c;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Homecooking App</h1>
-        <p>Your go-to platform for delicious home-cooked meals.</p>
+        <h1>Mirepoix</h1>
+        <p>Home cooking, simplified.</p>
     </header>
 
     <main>
         <section class="about">
-            <h2>About Us</h2>
-            <p>Welcome to the Homecooking App, where we bring the joy of cooking back into your home. Explore a variety of recipes, cooking tips, and meal plans tailored just for you.</p>
+            <h2>What is Mirepoix?</h2>
+            <p>Mirepoix is the app that makes home cooking efficient and delightful. From discovering new recipes to organizing your grocery shopping and sharing your creations with friends, Mirepoix streamlines every step of the cooking journey.</p>
         </section>
-        <section class="recipes">
-            <h2>Featured Recipes</h2>
-            <p>Discover our hand-picked selection of recipes to make your mealtime special. From quick snacks to elaborate feasts, we have something for everyone.</p>
+        <section class="features">
+            <h2>Features</h2>
+            <ul>
+                <li>Recipe Discovery: Find curated recipes tailored to your tastes.</li>
+                <li>Smart Shopping Lists: Generate optimized grocery lists from recipes.</li>
+                <li>Cooking Made Simple: Step-by-step instructions for every dish.</li>
+                <li>Socialize Around Food: Share your creations and connect with fellow food lovers.</li>
+            </ul>
         </section>
-        <section>
-            <h2>Why Choose Us?</h2>
-            <p>Our app is designed with simplicity and convenience in mind. Whether you’re a beginner or a seasoned cook, we have resources to make your kitchen experience enjoyable and stress-free.</p>
+        <section class="download">
+            <h2>Get the App</h2>
+            <p>Mirepoix is available on the App Store and Google Play. Download now to transform your cooking experience.</p>
+            <p>
+                <a href="#" style="color: #ff6666;">Download on the App Store</a> | 
+                <a href="#" style="color: #66bb6a;">Get it on Google Play</a>
+            </p>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 Homecooking App. All rights reserved. | <a href="#">Privacy Policy</a></p>
+        <p>&copy; 2025 Mirepoix. All rights reserved. | <a href="#">Privacy Policy</a></p>
     </footer>
 </body>
 </html>
