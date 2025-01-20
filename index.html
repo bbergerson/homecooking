@@ -11,62 +11,49 @@
             padding: 0;
             background-color: #f9f9f9;
             color: #333;
+            scroll-behavior: smooth;
         }
         header {
             background: linear-gradient(90deg, #ff7e5f, #feb47b);
             color: white;
-            padding: 2rem;
+            padding: 4rem;
             text-align: center;
             transition: all 0.3s ease-in-out;
         }
         header:hover {
             background: linear-gradient(90deg, #feb47b, #ff7e5f);
         }
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #333;
-            color: white;
-            padding: 1rem 0;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-        nav a {
-            margin: 0 1rem;
-            color: white;
-            text-decoration: none;
-            font-size: 1.2rem;
-            transition: color 0.3s ease;
-        }
-        nav a:hover {
-            color: #ff7e5f;
-        }
         main {
-            padding: 2rem;
             max-width: 1200px;
             margin: 0 auto;
+            padding: 2rem;
         }
         section {
             margin-bottom: 3rem;
-            padding: 1.5rem;
+            padding: 3rem;
             background: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
         section:hover {
             transform: translateY(-5px);
-            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        .about {
+            background: linear-gradient(to right, #ff9a9e, #fad0c4);
+            color: #333;
+        }
+        .recipes {
+            background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+            color: #333;
         }
         footer {
             text-align: center;
-            padding: 1.5rem 0;
+            padding: 2rem 0;
             background-color: #333;
             color: white;
-            position: relative;
-            bottom: 0;
-            width: 100%;
+            margin-top: 3rem;
         }
         footer a {
             color: #ff7e5f;
@@ -84,21 +71,18 @@
         <p>Your go-to platform for delicious home-cooked meals.</p>
     </header>
 
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Recipes</a>
-        <a href="#">Contact</a>
-    </nav>
-
     <main>
-        <section>
+        <section class="about">
             <h2>About Us</h2>
             <p>Welcome to the Homecooking App, where we bring the joy of cooking back into your home. Explore a variety of recipes, cooking tips, and meal plans tailored just for you.</p>
         </section>
-        <section>
+        <section class="recipes">
             <h2>Featured Recipes</h2>
             <p>Discover our hand-picked selection of recipes to make your mealtime special. From quick snacks to elaborate feasts, we have something for everyone.</p>
+        </section>
+        <section>
+            <h2>Why Choose Us?</h2>
+            <p>Our app is designed with simplicity and convenience in mind. Whether you’re a beginner or a seasoned cook, we have resources to make your kitchen experience enjoyable and stress-free.</p>
         </section>
     </main>
 
