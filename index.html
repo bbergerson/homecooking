@@ -3,77 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Website</title>
+    <title>Homecooking App</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
+            background-color: #f9f9f9;
             color: #333;
         }
         header {
-            background-color: #4CAF50;
+            background: linear-gradient(90deg, #ff7e5f, #feb47b);
             color: white;
-            padding: 1rem 2rem;
+            padding: 2rem;
             text-align: center;
+            transition: all 0.3s ease-in-out;
+        }
+        header:hover {
+            background: linear-gradient(90deg, #feb47b, #ff7e5f);
         }
         nav {
+            display: flex;
+            justify-content: center;
             background-color: #333;
             color: white;
-            overflow: hidden;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
         nav a {
-            float: left;
-            display: block;
+            margin: 0 1rem;
             color: white;
-            text-align: center;
-            padding: 14px 16px;
             text-decoration: none;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
         }
         nav a:hover {
-            background-color: #575757;
+            color: #ff7e5f;
         }
         main {
             padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        section {
+            margin-bottom: 3rem;
+            padding: 1.5rem;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
         }
         footer {
             text-align: center;
-            padding: 1rem 0;
+            padding: 1.5rem 0;
             background-color: #333;
             color: white;
-            position: fixed;
+            position: relative;
             bottom: 0;
             width: 100%;
+        }
+        footer a {
+            color: #ff7e5f;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        footer a:hover {
+            color: #feb47b;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to Your Website</h1>
-        <p>Your tagline goes here.</p>
+        <h1>Homecooking App</h1>
+        <p>Your go-to platform for delicious home-cooked meals.</p>
     </header>
 
     <nav>
         <a href="#">Home</a>
         <a href="#">About</a>
-        <a href="#">Services</a>
+        <a href="#">Recipes</a>
         <a href="#">Contact</a>
     </nav>
 
     <main>
         <section>
             <h2>About Us</h2>
-            <p>This is where you can provide details about your website or business. Add text, images, or any other content you'd like to share.</p>
+            <p>Welcome to the Homecooking App, where we bring the joy of cooking back into your home. Explore a variety of recipes, cooking tips, and meal plans tailored just for you.</p>
         </section>
         <section>
-            <h2>Our Services</h2>
-            <p>Describe the services or products you offer here. Include anything you think your visitors will find helpful.</p>
+            <h2>Featured Recipes</h2>
+            <p>Discover our hand-picked selection of recipes to make your mealtime special. From quick snacks to elaborate feasts, we have something for everyone.</p>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 Your Website. All rights reserved.</p>
+        <p>&copy; 2025 Homecooking App. All rights reserved. | <a href="#">Privacy Policy</a></p>
     </footer>
 </body>
 </html>
