@@ -3,31 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sous</title>
+    <title>Sous - Your Personal Sous Chef</title>
+    
+    <!-- Google Font: Josefin Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
     <style>
+        /* Global Styles */
         body {
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Josefin Sans', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #FDF8EC;
             color: #414337;
             scroll-behavior: smooth;
         }
+
+        /* Header Section */
         header {
-            background: linear-gradient(90deg, #FF3D00, #FDF8EC);
-            color: #414337;
-            padding: 4rem;
+            background: #FF3D00;
+            color: #FDF8EC;
+            padding: 3rem;
             text-align: center;
-            border-bottom: 2px solid #FF3D00;
+            border-bottom: 3px solid #414337;
         }
         header h1 {
             font-size: 3rem;
             margin: 0;
+            font-weight: 600;
+            text-transform: uppercase;
         }
         header p {
-            font-size: 1.2rem;
-            color: #333;
+            font-size: 1.4rem;
+            font-weight: 300;
+            margin-top: 0.5rem;
         }
+
+        /* Hero Section with Image */
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+        .hero img {
+            width: 280px;
+            max-width: 100%;
+            margin-top: 20px;
+        }
+
+        /* Main Content Sections */
         main {
             max-width: 1000px;
             margin: 0 auto;
@@ -58,43 +85,61 @@
         .brochure {
             border-left: 5px solid #414337;
         }
+
+        /* Footer */
         footer {
             text-align: center;
             padding: 2rem;
             background-color: #FDF8EC;
             color: #414337;
-            border-top: 2px solid #FF3D00;
+            border-top: 3px solid #FF3D00;
         }
         footer a {
             color: #FF3D00;
             text-decoration: none;
+            font-weight: 600;
             transition: color 0.3s ease;
         }
         footer a:hover {
             color: #D32F00;
         }
+
     </style>
 </head>
 <body>
+
+    <!-- Header -->
     <header>
         <h1>Sous</h1>
-        <p>Home cooking, simplified.</p>
+        <p>Your personal sous chef</p>
     </header>
 
+    <!-- Hero Section with App Image -->
+    <section class="hero">
+        <h2>Cooking, made smarter.</h2>
+        <p>The app that tailors every recipe to your skill level, taste, and lifestyle.</p>
+        <img src="assets/sousphone.png" alt="Sous App">
+    </section>
+
+    <!-- Main Content -->
     <main>
         <section class="about">
             <h2>What is Sous?</h2>
-            <p>Sous is the app that makes home cooking efficient and delightful. From discovering new recipes to organizing your grocery shopping and sharing your creations with friends, Sous streamlines every step of the cooking journey.</p>
+            <p>Sous is the smart cooking app that personalizes every step of your home cooking journey. 
+               Whether you're looking for quick and easy meals, skill-building recipes, or dishes that match your dietary preferences, 
+               Sous curates meal discovery, planning, and execution—helping you cook with confidence and ease.</p>
         </section>
+
         <section class="features">
             <h2>Features</h2>
             <ul>
                 <li>📖 <b>Recipe Discovery:</b> Find curated recipes tailored to your tastes.</li>
                 <li>🛒 <b>Smart Shopping Lists:</b> Generate optimized grocery lists from recipes.</li>
-                <li>🍳 <b>Cooking Made Simple:</b> Step-by-step instructions for every dish.</li>
-                <li>🌍 <b>Socialize Around Food:</b> Share your creations and connect with fellow food lovers.</li>
+                <li>🍳 <b>Adaptive Cooking:</b> AI-powered difficulty slider tailors recipes to your skill level.</li>
+                <li>🌍 <b>Meal Planning:</b> Optimize ingredient use across multiple meals to reduce waste.</li>
             </ul>
         </section>
+
         <section class="download">
             <h2>Get the App</h2>
             <p>Sous is available on the App Store and Google Play. Download now to transform your cooking experience.</p>
@@ -103,17 +148,20 @@
                 <a href="#" style="color: #414337; font-weight: bold;">Get it on Google Play</a>
             </p>
         </section>
+
         <section class="brochure">
             <h2>Brochure</h2>
-            <p>Learn more about Sous! Download our brochure for an in-depth look at how we can make home cooking effortless.</p>
-            <p>
-                <a href="brochure.pdf" download style="color: #FF3D00; font-weight: bold;">📄 Download Brochure</a>
+            <p>Learn more about Sous! View our brochure below or 
+                <a href="assets/brochure.pdf" download style="color: #FF3D00; font-weight: bold;">download it here</a>.
             </p>
+            <img src="assets/brochure_page1.png" alt="Sous Brochure" style="width: 100%; max-width: 800px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
         </section>
     </main>
 
+    <!-- Footer -->
     <footer>
         <p>&copy; 2025 Sous. All rights reserved. | <a href="#">Privacy Policy</a></p>
     </footer>
+
 </body>
 </html>
